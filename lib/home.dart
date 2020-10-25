@@ -271,12 +271,15 @@ class _HomeState extends State<Home> {
                 child: Container(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
-
                     children: <Widget>[
                       Container(
                         height: 150,
                         width: 260,
                         decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(8.0),
+                            topLeft: Radius.circular(8.0),
+                          ),
                           color: Colors.white,
                           image: new DecorationImage(
                               alignment: Alignment(-1, 1),
@@ -333,6 +336,10 @@ class _HomeState extends State<Home> {
                           height: 150,
                           width: 260,
                           decoration: BoxDecoration(
+                            borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(8.0),
+                              topLeft: Radius.circular(8.0),
+                            ),
                             color: Colors.white,
                             image: new DecorationImage(
                                 alignment: Alignment(-1, 1),
